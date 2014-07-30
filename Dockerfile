@@ -1,4 +1,4 @@
-FROM kazukgw/docker_ffmpeg
+FROM kazukgw/docker-ffmpeg
 WORKDIR /home/nginx/
 
 RUN sudo apt-get -y install libpcre3-dev libssl-dev
