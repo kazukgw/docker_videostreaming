@@ -22,7 +22,7 @@ RUN mkdir /etc/nginx && mkdir /var/log/nginx && mkdir /home/nginx/html
 RUN cp /home/nginx/nginx-1.7.1/conf/* /etc/nginx/
 
 ADD nginx /etc/init.d/nginx
-ADD nginx.conf /etc/nginx/nginx.conf.template
+ADD nginx.conf.template /etc/nginx/nginx.conf.template
 ADD appinit /usr/bin/appinit
 RUN chmod 744 /usr/bin/appinit
 
